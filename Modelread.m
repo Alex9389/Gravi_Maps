@@ -30,13 +30,13 @@ while (~feof(fid))
     dC(n+1,m+1)= B(5);
     dS(n+1,m+1)= B(6);
   elseif (search == 'earth_gravity_constant')
-	GM = fscanf (fid,'%s');
+	GM = fscanf(fid,'%g');
 	%перевести в числа
   elseif (search == 'radius')
-	Ae = fscanf (fid,'%s');
+	Ae = fscanf(fid,'%g');
 	%перевести в числа
   elseif (search == 'max_degree')
-	Nmax = fscanf (fid,'%s');
+	Nmax = fscanf(fid,'%s');
 	%перевести в числа
   end
 end
